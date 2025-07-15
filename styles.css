@@ -526,7 +526,7 @@ p {
    ========================================== */
 
 .hero {
-    padding: 120px 0 80px;
+    padding: 200px 0 80px;
     background-image: url(./attached_assets/8306150.jpg);
     color: var(--white);
     position: relative;

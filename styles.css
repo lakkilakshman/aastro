@@ -527,8 +527,7 @@ p {
 
 .hero {
     padding: 120px 0 80px;
-    background: linear-gradient(180deg, rgba(26, 26, 141, 0.9) 0%, rgba(130, 4, 4, 0.85) 50%, rgba(177, 129, 7, 0.8) 100%), 
-                linear-gradient(45deg, rgba(177, 177, 11, 0.1) 0%, rgba(192, 192, 192, 0.1) 100%);
+    background-image: url(./attached_assets/8306150.jpg);
     color: var(--white);
     position: relative;
     overflow: hidden;

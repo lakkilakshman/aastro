@@ -483,8 +483,8 @@ p {
 }
 
 .logo-img {
-    width: 35px;
-    height: 35px;
+    width: 60px;
+    height: 60px;
     object-fit: contain;
     background: transparent;
     border-radius: var(--radius-sm);
@@ -1137,8 +1137,8 @@ p {
 }
 
 .footer-logo-img {
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     border: 2px solid var(--primary-gold);
     object-fit: cover;

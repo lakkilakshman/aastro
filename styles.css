@@ -1235,6 +1235,24 @@ p {
     box-shadow: 0 4px 15px rgba(184, 134, 11, 0.3);
 }
 
+.social-section {
+  margin-top: 15px;
+}
+
+.social-section span {
+  color:var(--gray-300);
+  font-weight: 600;
+  margin-right: 12px;
+}
+
+.social-links a {
+  color:  #fff;
+  margin-right: 14px;
+  font-size: 25px;
+  transition: color 0.3s;
+  text-decoration: none;
+}
+
 .contact-info-footer {
     display: flex;
     flex-direction: column;

@@ -688,23 +688,25 @@ const translations = {
 };
 
  
+
   function openModal(imgElement) {
     const modal = document.getElementById("imgModal");
     const modalImg = document.getElementById("modalImg");
     modal.classList.add("show");
     modalImg.src = imgElement.src;
-    document.body.style.overflow = "hidden"; // prevent background scroll
+    document.body.style.overflow = "hidden";
   }
 
   function closeModal() {
-    const modal = document.getElementById("imgModal");
-    modal.classList.remove("show");
-    document.body.style.overflow = ""; // re-enable scroll
+    document.getElementById("imgModal").classList.remove("show");
+    document.body.style.overflow = "";
   }
 
   document.addEventListener("keydown", function (e) {
     if (e.key === "Escape") closeModal();
   });
+
+
 
 
 

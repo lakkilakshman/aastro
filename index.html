@@ -434,43 +434,55 @@
 
 
 
-    <section class="feedback-carousel" id="reviews">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Client Feedback</h2>
-                <p class="section-subtitle">Hear what our clients have to say</p>
-            </div>
+     <!-- Add Swiper.js CDN in <head> of your HTML -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-            <div class="carousel-wrapper">
-                <div class="review-carousel">
-                    <div class="review-item">
-                        <p class="review-text">"The tarot reading was spot on. It helped me make a major life decision!"
-                        </p>
-                        <div class="review-author">
-                            <strong>- Ritu Sharma</strong>
-                            <span>Delhi, India</span>
-                        </div>
-                    </div>
-                    <div class="review-item">
-                        <p class="review-text">"Got my name corrected and noticed positive energy in my daily life.
-                            Amazing experience."</p>
-                        <div class="review-author">
-                            <strong>- Manish Verma</strong>
-                            <span>Pune, Maharashtra</span>
-                        </div>
-                    </div>
-                    <div class="review-item">
-                        <p class="review-text">"Very professional service. They answered all my questions patiently on
-                            WhatsApp."</p>
-                        <div class="review-author">
-                            <strong>- Neha Kapoor</strong>
-                            <span>Bangalore, India</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- Feedback Screenshot Carousel Section -->
+<section class="feedback-carousel" id="reviews">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Client Feedback</h2>
+      <p class="section-subtitle">Screenshots from Happy Clients</p>
+    </div>
+
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="attached_assets/image1.jpeg" alt="Feedback 1" /></div>
+        <div class="swiper-slide"><img src="attached_assets/image2.jpeg" alt="Feedback 2" /></div>
+        <div class="swiper-slide"><img src="attached_assets/image3.png" alt="Feedback 3" /></div>
+        <div class="swiper-slide"><img src="attached_assets/image4.png" alt="Feedback 4" /></div>
+        <div class="swiper-slide"><img src="attached_assets/image5.png" alt="Feedback 5" /></div>
+        <div class="swiper-slide"><img src="attached_assets/image6.png" alt="Feedback 6" /></div>
+        <div class="swiper-slide"><img src="attached_assets/image7.png" alt="Feedback 7" /></div>
+        <div class="swiper-slide"><img src="attached_assets/image8.png" alt="Feedback 8" /></div>
+        <div class="swiper-slide"><img src="attached_assets/image9.png" alt="Feedback 9" /></div>
+      </div>
+    </div>
+  </div>
+</section>
+<script>
+  new Swiper(".mySwiper", {
+    slidesPerView: 1.2,
+    spaceBetween: 15,
+    loop: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 2.2,
+      },
+      1024: {
+        slidesPerView: 3,
+      },
+    },
+  });
+</script>
 
 
 

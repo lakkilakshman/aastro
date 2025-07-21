@@ -137,6 +137,32 @@ p {
     margin-bottom: var(--spacing-md);
 }
 
+ .feedback-carousel {
+    padding: 50px 0;
+  }
+
+  .swiper-slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .section-header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .section-title {
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .section-subtitle {
+    font-size: 16px;
+    color: #666;
+  }
+
 
 .feedback-carousel {
     padding: 60px 0;

@@ -687,18 +687,21 @@ const translations = {
     }
 };
 
-  function openModal(img) {
+ 
+  function openModal(imgElement) {
     const modal = document.getElementById("imgModal");
     const modalImg = document.getElementById("modalImg");
-    modal.style.display = "block";
-    modalImg.src = img.src;
+    modal.classList.add("show");
+    modalImg.src = imgElement.src;
+    document.body.style.overflow = "hidden"; // prevent background scroll
   }
 
   function closeModal() {
-    document.getElementById("imgModal").style.display = "none";
+    const modal = document.getElementById("imgModal");
+    modal.classList.remove("show");
+    document.body.style.overflow = ""; // re-enable scroll
   }
 
-  // Optional: Close modal with Escape key
   document.addEventListener("keydown", function (e) {
     if (e.key === "Escape") closeModal();
   });
